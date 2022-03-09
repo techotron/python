@@ -4,5 +4,7 @@
 Running the tests, create a venv and install the requirements:
 
 ```
-python3
+cd exercism
+python3 -m venv .venv
+source ./.venv/bin/activate
 ```
