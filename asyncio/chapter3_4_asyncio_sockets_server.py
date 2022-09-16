@@ -12,7 +12,7 @@ async def echo(connection: socket, loop: AbstractEventLoop) -> None:
 
 async def listen_for_connections(server_socket: socket, loop: AbstractEventLoop):
     while True:
-        # listen for new connections
+        # listen for new connections, wait until something comes in
         connection, address = await loop.sock_accept(server_socket)
         connection.setblocking(False)
         print(f"Got a connection from {address}")
