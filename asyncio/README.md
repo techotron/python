@@ -1,6 +1,5 @@
 ## Asyncio
 ```
-cd asyncio
 make up && pipenv shell
 ```
 
