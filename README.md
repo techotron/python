@@ -1,10 +1,7 @@
 # python
 
-## Excercism
-Running the tests, create a venv and install the requirements:
-
 ```
-cd exercism
+cd <dir>
 python3 -m venv .venv
 source .venv/bin/activate
 pip3 install -r requirements.txt
