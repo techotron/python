@@ -1,4 +1,3 @@
-.PHONY: up
-up:
-	pipenv shell && \
+.PHONY: deps
+deps:
 	pipenv install --dev

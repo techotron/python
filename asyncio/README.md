@@ -1,6 +1,6 @@
 ## Asyncio
 ```
-make up && pipenv shell
+make deps && pipenv shell
 ```
 
 Bookmark: chapter4
