@@ -1,0 +1,12 @@
+---
+version: "3"
+services:
+  chapter5_db:
+    image: postgres:15.1
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: products
+    ports:
+      - 5432:5432  
