@@ -36,6 +36,8 @@ def main():
     loop = asyncio.get_event_loop()
     loop.run_until_complete(run(queue))
 
+    print("end")
+
 
 if __name__ == "__main__":
     main()
