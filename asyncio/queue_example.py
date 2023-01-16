@@ -66,7 +66,7 @@ class My_Async_Queue():
             await self.first_q.put(i)
 
         for q in [self.first_q, self.second_q, self.third_q]:
-            # queue.join() will block execution (ie, cancelling the workers) until the queues have been fully processed, so this just ensures 
+            # queue.join() will block further execution (in this case the block which cancel the workers) until the queues have been fully processed, so this just ensures 
             #  that all the queues are empty before cancelling the tasks.
             # The functions themselves are passing "items" down the chain (first_delay -> second_delay -> third_delay)
             await q.join()
