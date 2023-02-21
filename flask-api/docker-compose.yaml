@@ -1,0 +1,16 @@
+version: "3"
+services:
+  api:
+    image: python:3.11-slim
+    entrypoint: [ "/app/entrypoint.sh" ]
+    volumes:
+      - ./:/app:ro
+    ports:
+      - 5000:5000
+  nginx:
+    image: nginx:latest
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf
+    ports:
+      - 8080:8080  
+
