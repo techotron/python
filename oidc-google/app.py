@@ -136,7 +136,7 @@ def callback():
         data=body,
         auth=(GOOGLE_CLIENT_ID, GOOGLE_CLIENT_SECRET),
     )
-    logging.debug(f"token response from provider token endpoint: {token_response}")
+    logging.debug(f"token response from provider token endpoint: {token_response.json()}")
 
     # Parse the tokens!
     client.parse_request_body_response(json.dumps(token_response.json()))
